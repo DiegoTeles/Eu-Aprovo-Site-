@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Eu Aprovo!</title>
+    <meta name="description" content="Aprove ou reprove suas leis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav style="background-color: black" id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Eu Aprovo!</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#first">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#last">Contato</a>
+                    </li>
+                    <li>
+                        <input style="margin-left: 200px" type="text" class="form-control" placeholder="Pesquisar">
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="Saiba mais sobre nós." href="#aboutModal">Sobre!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <!--Header - Carousel-->
+    <header id="first">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="./img/header.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Vereadores
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/header.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Aprovados
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/header.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Aprovados
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <!--<div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Eu Aprovo!</h1>
+                <h4>A informação na sua mão</h4>
+                <hr>
+                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+            </div>
+        </div>
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>-->
+    </header>
+    <!--Area de descanso-->
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <!--<div class="call-to-action">
+                <h2 class="text-primary"></h2>
+                <a href="http://www.bootstrapzero.com/bootstrap-template/landing-zero" target="ext" class="btn btn-default btn-lg wow flipInX">Free Download</a>
+            </div>
+            <br>
+
+            <br>-->
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <h6 class="wide-space text-center"></h6>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-sass" title="sass"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-css3-outline" title="css 3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!--Tres Charts-->
+    <!--<section id="three" class="no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/deer.jpg">
+                        <img src="./assets/deer.jpg" class="img-responsive" alt="Image 1">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/beach.jpg">
+                        <img src="./assets/beach.jpg" class="img-responsive" alt="Image 2">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/lake.jpg">
+                        <img src="./assets/lake.jpg" class="img-responsive" alt="Image 3">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--<div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/bike.jpg">
+                        <img src="./assets/bike.jpg" class="img-responsive" alt="Image 4">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/city.jpg">
+                        <img src="./assets/city.jpg" class="img-responsive" alt="Image 5">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/colors.jpg">
+                        <img src="./assets/colors.jpg" class="img-responsive" alt="Image 6">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+    <!--</div>
+    </div>
+    </section>-->
+
+
+    <!--Timeline-->
+    <br>
+    <br>
+    <section id="two" class="no-padding">
+        <div class="row align-center">
+            <div class="col-sm-2 col-md-4">
+                <div class="thumbnail">
+                    <img src="./img/242x200.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Chart 1
+                            <small class="badge">4 Novos</small>
+                        </h3>
+                        <a class="btn btn-success" role="button" data-toggle="collapse" href="#chart1" aria-expanded="false" aria-controls="chart1">Saiba mais...</a>
+                        <div class="collapse" id="chart1">
+                            <br>
+                            <div class="well">
+                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer
+                                    um livro de modelos de tipos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 col-md-4">
+                <div class="thumbnail">
+                    <img src="./img/242x200.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Chart 2</h3>
+                        <a class="btn btn-success" role="button" data-toggle="collapse" href="#chart2" aria-expanded="false" aria-controls="chart2">Saiba mais...</a>
+                        <div class="collapse" id="chart2">
+                            <br>
+                            <div class="well">
+                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer
+                                    um livro de modelos de tipos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2 col-md-4">
+                <div class="thumbnail">
+                    <img src="./img/242x200.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Chart 3</h3>
+                        <a class="btn btn-success" role="button" data-toggle="collapse" href="#chart3" aria-expanded="false" aria-controls="chart3">Saiba mais...</a>
+                        <div class="collapse" id="chart3">
+                            <br>
+                            <div class="well">
+                                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer
+                                    um livro de modelos de tipos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="col-sm-2 col-md-3">
+                <div class="thumbnail">
+                    <img src="./img/242x200.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Chart 4</h3>
+                        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro
+                            de modelos de tipos.</p>
+                        <p><a href="#" class="btn btn-danger" role="button">Button</a> <a href="#" class="btn btn-danger" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <!--<div class="call-to-action">
+                <h2 class="text-primary"></h2>
+                <a href="http://www.bootstrapzero.com/bootstrap-template/landing-zero" target="ext" class="btn btn-default btn-lg wow flipInX">Free Download</a>
+            </div>
+            <br>
+
+            <br>-->
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <h6 class="wide-space text-center"></h6>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-sass" title="sass"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-css3-outline" title="css 3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!--<section class="bg-primary" id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Built On The Bootstrap Grid</h2>
+                    <br>
+                    <p class="text-faded">
+                        Bootstrap's responsive grid comes in 4 sizes or "breakpoints": tiny (xs), small(sm), medium(md) and large(lg). These 4 grid sizes enable you create responsive layouts that behave accordingly on different devices.
+                    </p>
+                    <a href="#three" class="btn btn-default btn-xl page-scroll">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="margin-top-0 text-primary">Flexible Layouts</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Responsive</h3>
+                        <p class="text-muted">Your site looks good everywhere</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-social-sass wow fadeInUp" data-wow-delay=".2s"></i>
+                        <h3>Customizable</h3>
+                        <p class="text-muted">Easy to theme and customize with SASS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="icon-lg ion-ios-star-outline wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Consistent</h3>
+                        <p class="text-muted">A mature, well-tested, stable codebase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="three" class="no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/deer.jpg">
+                        <img src="./assets/deer.jpg" class="img-responsive" alt="Image 1">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/beach.jpg">
+                        <img src="./assets/beach.jpg" class="img-responsive" alt="Image 2">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/lake.jpg">
+                        <img src="./assets/lake.jpg" class="img-responsive" alt="Image 3">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/bike.jpg">
+                        <img src="./assets/bike.jpg" class="img-responsive" alt="Image 4">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/city.jpg">
+                        <img src="./assets/city.jpg" class="img-responsive" alt="Image 5">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/colors.jpg">
+                        <img src="./assets/colors.jpg" class="img-responsive" alt="Image 6">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--<section class="container-fluid" id="four">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <h2 class="text-center text-primary">Features</h2>
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3>Simple</h3>
+                    <div class="media-body media-middle">
+                        <p>What could be easier? Get started fast with this landing page starter theme.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-ios-bolt-outline"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeIn">
+                    <h3>Free</h3>
+                    <div class="media-left">
+                        <a href="#alertModal" data-toggle="modal" data-target="#alertModal"><i class="icon-lg ion-ios-cloud-download-outline"></i></a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>Yes, please. Grab it for yourself, and make something awesome with this.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3>Unique</h3>
+                    <div class="media-body media-middle">
+                        <p>Because you don't want your Bootstrap site, to look like a Bootstrap site.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-ios-snowy"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeIn">
+                    <h3>Popular</h3>
+                    <div class="media-left">
+                        <i class="icon-lg ion-ios-heart-outline"></i>
+                    </div>
+                    <div class="media-body media-middle">
+                        <p>There's good reason why Bootstrap is the most used frontend framework in the world.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3>Tested</h3>
+                    <div class="media-body media-middle">
+                        <p>Bootstrap is matured and well-tested. It's a stable codebase that provides consistency.</p>
+                    </div>
+                    <div class="media-right">
+                        <i class="icon-lg ion-ios-flask-outline"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!--<aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2 class="text-primary">Get Started</h2>
+                <a href="http://www.bootstrapzero.com/bootstrap-template/landing-zero" target="ext" class="btn btn-default btn-lg wow flipInX">Free Download</a>
+            </div>
+            <br>
+            <hr/>
+            <br>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <h6 class="wide-space text-center">BOOTSTRAP IS BASED ON THESE STANDARDS</h6>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-sass" title="sass"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 text-center">
+                            <i class="icon-lg ion-social-css3-outline" title="css 3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>-->
+
+
+    <section id="last">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="margin-top-0 wow fadeIn">Entre em Contato</h2>
+                    <hr class="primary">
+                    <p>Mande seu feedback ou mande sugestões.</p>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <form class="contact-form row">
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Telefone(Opcional)">
+                        </div>
+                        <div class="col-md-12">
+                            <label></label>
+                            <textarea class="form-control" rows="9" placeholder="Escreva sua mensagem.."></textarea>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4">
+                            <label></label>
+                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Enviar <i class="ion-android-arrow-forward"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>Informações</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Texto</a></li>
+                        <li><a href="">Texto</a></li>
+                        <li><a href="">Texto</a></li>
+                        <li><a href="">Texto</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 column">
+                        <h4>Informações</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="">Texto</a></li>
+                            <li><a href="">Texto</a></li>
+                            <li><a href="">Texto</a></li>
+                            <li><a href="">Texto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 column">
+                        <h4>Receba em seu e-mail</h4>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" title="No spam, we promise!" placeholder="Seu email">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Inscreva-se</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-right">
+                        <h4>Siga-nos</h4>
+                        <ul class="list-inline">
+                            <li><a rel="nofollow" href="" title="Twitter"><i class="icon ion-social-twitter-outline"></i></a>&nbsp;</li>
+                            <li><a rel="nofollow" href="" title="Facebook"><i class="icon ion-social-facebook-outline"></i></a>&nbsp;</li>
+                            <li><a rel="nofollow" href="" title="Dribble"><i class="icon ion-social-dribbble-outline"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br/>
+                <span class="pull-right text-muted small"><a href="#">Idealização Eu Aprovo</a> ©2017 Company</span>
+            </div>
+    </footer>
+    <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="" id="galleryImage" class="img-responsive" />
+                    <p>
+                        <br/>
+                        <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="text-center">Sobre</h2>
+                    <h5 class="text-center">
+                        Texto sobre!
+                    </h5>
+                    <p class="text-justify">
+                        Texto sobre!
+                    </p>
+                    <p class="text-center">
+                        <a href="#"></a>
+                    </p>
+                    <br/>
+                    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> Fechar! </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="text-center">Concluído</h2>
+                    <p class="text-center"></p>
+                    <p class="text-center">
+                        <a href="#"></a>
+                    </p>
+                    <br/>
+                    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK =D <i class="ion-android-close"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
